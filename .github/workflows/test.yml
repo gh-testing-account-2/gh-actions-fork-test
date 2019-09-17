@@ -13,6 +13,8 @@ jobs:
       run: echo Hello, world!
     - name: Run a one-line script 2
       run: echo hello ${{secrets.foo}} world
+    - name: Hmmmmmm
+      run: echo hello ${{secrets.foo}} world | head -c 11
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
